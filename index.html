@@ -1,0 +1,57 @@
+<html>
+<body>
+    <h3>Drug Marketing Physician Targeting</h3>
+
+<div>
+  <form action="/predict" method="POST">
+    <label for="age">year_quarter</label>
+    <input type="text" id="year_quarter" name="year_quarter">
+    <br>
+    <label for="age">brand_prescribed</label>
+    <input type="text" id="brand_prescribed" name="brand_prescribed">
+    <br>
+    <label for="age">total_representative_visits</label>
+    <input type="text" id="total_representative_visits" name="total_representative_visits">
+    <br>
+    <label for="age">total_sample_dropped</label>
+    <input type="text" id="total_sample_dropped" name="total_sample_dropped">
+    <br>
+	<label for="age">physician_hospital_affiliation</label>
+    <input type="text" id="physician_hospital_affiliation" name="physician_hospital_affiliation">
+    <br>
+    <label for="age">physician_in_group_practice</label>
+    <input type="text" id="physician_in_group_practice" name="physician_in_group_practice">
+    <br>
+    <label for="age">total_prescriptions_for_indication1</label>
+    <input type="text" id="total_prescriptions_for_indication1" name="total_prescriptions_for_indication1">
+    <br>
+    <label for="age">total_prescriptions_for_indication2</label>
+    <input type="text" id="total_prescriptions_for_indication2" name="total_prescriptions_for_indication2">
+    <br>
+	<label for="age">total_patient_with_commercial_insurance_plan</label>
+    <input type="text" id="total_patient_with_commercial_insurance_plan" name="total_patient_with_commercial_insurance_plan">
+    <br>
+    <label for="age">total_patient_with_medicare_insurance_plan</label>
+    <input type="text" id="total_patient_with_medicare_insurance_plan" name="total_patient_with_medicare_insurance_plan">
+    <br>
+    <label for="age">total_patient_with_medicaid_insurance_plan</label>
+    <input type="text" id="total_patient_with_medicaid_insurance_plan" name="total_patient_with_medicaid_insurance_plan">
+    <br>
+    <label for="age">total_competitor_prescription</label>
+    <input type="text" id="total_competitor_prescription" name="total_competitor_prescription">
+    <br>
+	<label for="age">new_prescriptions</label>
+    <input type="text" id="new_prescriptions" name="new_prescriptions">
+    <br>
+    <label for="age">physician_gender</label>
+    <input type="text" id="physician_gender" name="physician_gender">
+    <br>
+    <label for="age">physician_speciality</label>
+    <input type="text" id="physician_speciality" name="physician_speciality">
+    <br>
+    <input type="submit" value="Submit">
+  </form>
+  <h1>predicted class: {{ prediction }} <h1>
+</div>
+</body>
+</html>

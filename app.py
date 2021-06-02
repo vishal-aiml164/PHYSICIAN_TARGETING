@@ -1,6 +1,7 @@
 # https://www.tutorialspoint.com/flask
-from flask import Flask, jsonify, request
 import numpy as np
+from flask import Flask, jsonify, request
+
 #from sklearn.externals import joblib
 import joblib
 import pandas as pd
